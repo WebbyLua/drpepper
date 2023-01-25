@@ -1,0 +1,726 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local DrPepperMain = Instance.new("ScreenGui")
+local LoginScreen = Instance.new("Frame")
+local picker = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local info = Instance.new("ImageButton")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local mod = Instance.new("ImageButton")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local visual = Instance.new("ImageButton")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local tab = Instance.new("Frame")
+local info_2 = Instance.new("Frame")
+local info2 = Instance.new("Frame")
+local info3 = Instance.new("Frame")
+local info1 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local t = Instance.new("TextLabel")
+local mod_2 = Instance.new("Frame")
+local info2_2 = Instance.new("Frame")
+local info3_2 = Instance.new("Frame")
+local info1_2 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local t_2 = Instance.new("TextLabel")
+local visual_2 = Instance.new("Frame")
+local info2_3 = Instance.new("Frame")
+local info3_3 = Instance.new("Frame")
+local info1_3 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local holder = Instance.new("Frame")
+local chams = Instance.new("Frame")
+local carms = Instance.new("TextButton")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local camamas = Instance.new("TextLabel")
+local r = Instance.new("TextBox")
+local g = Instance.new("TextBox")
+local b = Instance.new("TextBox")
+local otline = Instance.new("TextButton")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local outtits = Instance.new("TextLabel")
+local fil = Instance.new("TextBox")
+local tumtum = Instance.new("TextButton")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local tume = Instance.new("TextLabel")
+local UIListLayout_2 = Instance.new("UIListLayout")
+local Notif = Instance.new("Frame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local Temp = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local text = Instance.new("TextLabel")
+local title = Instance.new("TextLabel")
+local ew = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local ew_2 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
+local ew_3 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
+local ew_4 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+DrPepperMain.Name = "DrPepperMain"
+DrPepperMain.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DrPepperMain.DisplayOrder = 500000000
+DrPepperMain.ResetOnSpawn = false
+
+LoginScreen.Name = "LoginScreen"
+LoginScreen.Parent = DrPepperMain
+LoginScreen.BackgroundColor3 = Color3.fromRGB(39, 39, 53)
+LoginScreen.BorderColor3 = Color3.fromRGB(31, 31, 42)
+LoginScreen.BorderSizePixel = 4
+LoginScreen.Position = UDim2.new(0.3446998, 0, 0.215384617, 0)
+LoginScreen.Size = UDim2.new(0.310452163, 0, 0.56880343, 0)
+
+picker.Name = "picker"
+picker.Parent = LoginScreen
+picker.BackgroundColor3 = Color3.fromRGB(49, 49, 66)
+picker.BorderColor3 = Color3.fromRGB(31, 31, 42)
+picker.BorderSizePixel = 4
+picker.Size = UDim2.new(0.0713467076, 0, 1, 0)
+
+UIListLayout.Parent = picker
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 3)
+
+info.Name = "info"
+info.Parent = picker
+info.BackgroundTransparency = 1.000
+info.Size = UDim2.new(1, 0, 1, 0)
+info.ZIndex = 2
+info.Image = "rbxassetid://3926307971"
+info.ImageRectOffset = Vector2.new(244, 444)
+info.ImageRectSize = Vector2.new(36, 36)
+
+UIAspectRatioConstraint.Parent = info
+
+mod.Name = "mod"
+mod.Parent = picker
+mod.BackgroundTransparency = 1.000
+mod.Size = UDim2.new(1, 0, 1, 0)
+mod.ZIndex = 2
+mod.Image = "rbxassetid://3926305904"
+mod.ImageRectOffset = Vector2.new(324, 604)
+mod.ImageRectSize = Vector2.new(36, 36)
+mod.ImageTransparency = 0.400
+
+UIAspectRatioConstraint_2.Parent = mod
+
+visual.Name = "visual"
+visual.Parent = picker
+visual.BackgroundTransparency = 1.000
+visual.Size = UDim2.new(1, 0, 1, 0)
+visual.ZIndex = 2
+visual.Image = "rbxassetid://3926307971"
+visual.ImageRectOffset = Vector2.new(84, 44)
+visual.ImageRectSize = Vector2.new(36, 36)
+visual.ImageTransparency = 0.400
+
+UIAspectRatioConstraint_3.Parent = visual
+
+tab.Name = "tab"
+tab.Parent = LoginScreen
+tab.AnchorPoint = Vector2.new(0.5, 0.5)
+tab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tab.BackgroundTransparency = 1.000
+tab.Position = UDim2.new(0.533428848, 0, 0.5, 0)
+tab.Size = UDim2.new(0.930999994, 0, 1, 0)
+
+info_2.Name = "info"
+info_2.Parent = tab
+info_2.AnchorPoint = Vector2.new(0.5, 0.5)
+info_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+info_2.BackgroundTransparency = 1.000
+info_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+info_2.Size = UDim2.new(1, 0, 1, 0)
+info_2.Visible = false
+
+info2.Name = "info2"
+info2.Parent = info_2
+info2.AnchorPoint = Vector2.new(0.5, 0.5)
+info2.BackgroundColor3 = Color3.fromRGB(49, 49, 66)
+info2.BorderColor3 = Color3.fromRGB(31, 31, 42)
+info2.BorderSizePixel = 4
+info2.Position = UDim2.new(0.737942338, 0, 0.223516151, 0)
+info2.Size = UDim2.new(0.481388688, 0, 0.39703235, 0)
+
+info3.Name = "info3"
+info3.Parent = info_2
+info3.AnchorPoint = Vector2.new(0.5, 0.5)
+info3.BackgroundColor3 = Color3.fromRGB(49, 49, 66)
+info3.BorderColor3 = Color3.fromRGB(31, 31, 42)
+info3.BorderSizePixel = 4
+info3.Position = UDim2.new(0.737942338, 0, 0.719383895, 0)
+info3.Size = UDim2.new(0.481388688, 0, 0.511232197, 0)
+
+info1.Name = "info1"
+info1.Parent = info_2
+info1.AnchorPoint = Vector2.new(0.5, 0.5)
+info1.BackgroundColor3 = Color3.fromRGB(49, 49, 66)
+info1.BorderColor3 = Color3.fromRGB(31, 31, 42)
+info1.BorderSizePixel = 4
+info1.Position = UDim2.new(0.253311098, 0, 0.5, 0)
+info1.Size = UDim2.new(0.413294882, 0, 0.949999988, 0)
+
+TextLabel.Parent = info1
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(1, 0, 0.0460635014, 0)
+TextLabel.Font = Enum.Font.ArialBold
+TextLabel.Text = "hello :)"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+t.Name = "t"
+t.Parent = info1
+t.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+t.BackgroundTransparency = 1.000
+t.Position = UDim2.new(0, 0, 0.0460635051, 0)
+t.Size = UDim2.new(1, 0, 0.953936517, 0)
+t.Font = Enum.Font.ArialBold
+t.Text = "thanks for checkin my cheato' out, i hope you enjoy your cheating experience in counter blox. THIS ISN'T A HVH CHEAT!!!!! it's just an all purpose cheat that just so happens to have some joke features. thanks for reading and have fun! \\n\\n\\n-sincerely, mehhh."
+t.TextColor3 = Color3.fromRGB(255, 255, 255)
+t.TextScaled = true
+t.TextSize = 14.000
+t.TextWrapped = true
+t.TextXAlignment = Enum.TextXAlignment.Left
+t.TextYAlignment = Enum.TextYAlignment.Top
+
+mod_2.Name = "mod"
+mod_2.Parent = tab
+mod_2.AnchorPoint = Vector2.new(0.5, 0.5)
+mod_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mod_2.BackgroundTransparency = 1.000
+mod_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+mod_2.Size = UDim2.new(1, 0, 1, 0)
+mod_2.Visible = false
+
+info2_2.Name = "info2"
+info2_2.Parent = mod_2
+info2_2.AnchorPoint = Vector2.new(0.5, 0.5)
+info2_2.BackgroundColor3 = Color3.fromRGB(49, 49, 66)
+info2_2.BorderColor3 = Color3.fromRGB(31, 31, 42)
+info2_2.BorderSizePixel = 4
+info2_2.Position = UDim2.new(0.740507066, 0, 0.223516151, 0)
+info2_2.Size = UDim2.new(0.481388688, 0, 0.39703235, 0)
+
+info3_2.Name = "info3"
+info3_2.Parent = mod_2
+info3_2.AnchorPoint = Vector2.new(0.5, 0.5)
+info3_2.BackgroundColor3 = Color3.fromRGB(49, 49, 66)
+info3_2.BorderColor3 = Color3.fromRGB(31, 31, 42)
+info3_2.BorderSizePixel = 4
+info3_2.Position = UDim2.new(0.740507066, 0, 0.719383895, 0)
+info3_2.Size = UDim2.new(0.481388688, 0, 0.511232197, 0)
+
+info1_2.Name = "info1"
+info1_2.Parent = mod_2
+info1_2.AnchorPoint = Vector2.new(0.5, 0.5)
+info1_2.BackgroundColor3 = Color3.fromRGB(49, 49, 66)
+info1_2.BorderColor3 = Color3.fromRGB(31, 31, 42)
+info1_2.BorderSizePixel = 4
+info1_2.Position = UDim2.new(0.255875826, 0, 0.5, 0)
+info1_2.Size = UDim2.new(0.413294882, 0, 0.949999988, 0)
+
+TextLabel_2.Parent = info1_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Size = UDim2.new(1, 0, 0.0776978061, 0)
+TextLabel_2.Font = Enum.Font.ArialBold
+TextLabel_2.Text = "hello :)"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+t_2.Name = "t"
+t_2.Parent = info1_2
+t_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+t_2.BackgroundTransparency = 1.000
+t_2.Position = UDim2.new(0, 0, 0.0664320514, 0)
+t_2.Size = UDim2.new(1, 0, 0.933567882, 0)
+t_2.Font = Enum.Font.ArialBold
+t_2.Text = "thanks for checkin my cheato' out, i hope you enjoy your cheating experience in counter blox. THIS ISN'T A HVH CHEAT!!!!! it's just an all purpose cheat that just so happens to have some joke features. thanks for reading and have fun! \\n\\n\\n-sincerely, mehhh."
+t_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+t_2.TextSize = 15.000
+t_2.TextWrapped = true
+t_2.TextXAlignment = Enum.TextXAlignment.Left
+t_2.TextYAlignment = Enum.TextYAlignment.Top
+
+visual_2.Name = "visual"
+visual_2.Parent = tab
+visual_2.AnchorPoint = Vector2.new(0.5, 0.5)
+visual_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+visual_2.BackgroundTransparency = 1.000
+visual_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+visual_2.Size = UDim2.new(1, 0, 1, 0)
+
+info2_3.Name = "info2"
+info2_3.Parent = visual_2
+info2_3.AnchorPoint = Vector2.new(0.5, 0.5)
+info2_3.BackgroundColor3 = Color3.fromRGB(49, 49, 66)
+info2_3.BorderColor3 = Color3.fromRGB(31, 31, 42)
+info2_3.BorderSizePixel = 4
+info2_3.Position = UDim2.new(0.740507066, 0, 0.223516151, 0)
+info2_3.Size = UDim2.new(0.481388688, 0, 0.39703235, 0)
+
+info3_3.Name = "info3"
+info3_3.Parent = visual_2
+info3_3.AnchorPoint = Vector2.new(0.5, 0.5)
+info3_3.BackgroundColor3 = Color3.fromRGB(49, 49, 66)
+info3_3.BorderColor3 = Color3.fromRGB(31, 31, 42)
+info3_3.BorderSizePixel = 4
+info3_3.Position = UDim2.new(0.740507066, 0, 0.719383895, 0)
+info3_3.Size = UDim2.new(0.481388688, 0, 0.511232197, 0)
+
+info1_3.Name = "info1"
+info1_3.Parent = visual_2
+info1_3.AnchorPoint = Vector2.new(0.5, 0.5)
+info1_3.BackgroundColor3 = Color3.fromRGB(49, 49, 66)
+info1_3.BorderColor3 = Color3.fromRGB(31, 31, 42)
+info1_3.BorderSizePixel = 4
+info1_3.Position = UDim2.new(0.255875826, 0, 0.5, 0)
+info1_3.Size = UDim2.new(0.413294882, 0, 0.949999988, 0)
+
+TextLabel_3.Parent = info1_3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Size = UDim2.new(1, 0, 0.0492269322, 0)
+TextLabel_3.Font = Enum.Font.ArialBold
+TextLabel_3.Text = "esp & chams"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+holder.Name = "holder"
+holder.Parent = info1_3
+holder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+holder.BackgroundTransparency = 1.000
+holder.Position = UDim2.new(0, 0, 0.0664320514, 0)
+holder.Size = UDim2.new(1, 0, 0.933567941, 0)
+
+chams.Name = "chams"
+chams.Parent = holder
+chams.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+chams.BackgroundTransparency = 1.000
+chams.Size = UDim2.new(1, 0, 0.660764992, 0)
+
+carms.Name = "carms"
+carms.Parent = chams
+carms.AnchorPoint = Vector2.new(0.5, 0.5)
+carms.BackgroundColor3 = Color3.fromRGB(66, 66, 89)
+carms.BorderColor3 = Color3.fromRGB(31, 31, 42)
+carms.BorderSizePixel = 3
+carms.Position = UDim2.new(0.130317554, 0, 0.0868605375, 0)
+carms.Size = UDim2.new(0.112139829, 0, 0.0715500042, 0)
+carms.ZIndex = 3
+carms.Font = Enum.Font.ArialBold
+carms.Text = ""
+carms.TextColor3 = Color3.fromRGB(255, 255, 255)
+carms.TextScaled = true
+carms.TextSize = 14.000
+carms.TextWrapped = true
+
+UIAspectRatioConstraint_4.Parent = carms
+
+camamas.Name = "camamas"
+camamas.Parent = chams
+camamas.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+camamas.BackgroundTransparency = 1.000
+camamas.Position = UDim2.new(0.172540933, 0, 0, 0)
+camamas.Size = UDim2.new(0.827459097, 0, 0.178875029, 0)
+camamas.Font = Enum.Font.ArialBold
+camamas.Text = "chams"
+camamas.TextColor3 = Color3.fromRGB(255, 255, 255)
+camamas.TextSize = 14.000
+camamas.TextWrapped = true
+
+r.Name = "r"
+r.Parent = chams
+r.BackgroundColor3 = Color3.fromRGB(66, 66, 89)
+r.BorderColor3 = Color3.fromRGB(125, 0, 0)
+r.BorderSizePixel = 2
+r.Position = UDim2.new(0.169769928, 0, 0.176709145, 0)
+r.Size = UDim2.new(0, 121, 0, 6)
+r.Font = Enum.Font.ArialBold
+r.PlaceholderText = "red"
+r.Text = "255"
+r.TextColor3 = Color3.fromRGB(255, 255, 255)
+r.TextSize = 14.000
+
+g.Name = "g"
+g.Parent = chams
+g.BackgroundColor3 = Color3.fromRGB(66, 66, 89)
+g.BorderColor3 = Color3.fromRGB(0, 125, 0)
+g.BorderSizePixel = 2
+g.Position = UDim2.new(0.169769928, 0, 0.266889691, 0)
+g.Size = UDim2.new(0, 121, 0, 6)
+g.Font = Enum.Font.ArialBold
+g.PlaceholderText = "green"
+g.Text = "0"
+g.TextColor3 = Color3.fromRGB(255, 255, 255)
+g.TextScaled = true
+g.TextSize = 14.000
+g.TextWrapped = true
+
+b.Name = "b"
+b.Parent = chams
+b.BackgroundColor3 = Color3.fromRGB(66, 66, 89)
+b.BorderColor3 = Color3.fromRGB(0, 0, 125)
+b.BorderSizePixel = 2
+b.Position = UDim2.new(0.169769928, 0, 0.355244339, 0)
+b.Size = UDim2.new(0, 121, 0, 6)
+b.Font = Enum.Font.ArialBold
+b.PlaceholderText = "blue"
+b.Text = "255"
+b.TextColor3 = Color3.fromRGB(255, 255, 255)
+b.TextSize = 14.000
+
+otline.Name = "otline"
+otline.Parent = chams
+otline.AnchorPoint = Vector2.new(0.5, 0.5)
+otline.BackgroundColor3 = Color3.fromRGB(66, 66, 89)
+otline.BorderColor3 = Color3.fromRGB(31, 31, 42)
+otline.BorderSizePixel = 3
+otline.Position = UDim2.new(0.130317554, 0, 0.518816531, 0)
+otline.Size = UDim2.new(0.112139829, 0, 0.0715500042, 0)
+otline.ZIndex = 3
+otline.Font = Enum.Font.ArialBold
+otline.Text = ""
+otline.TextColor3 = Color3.fromRGB(255, 255, 255)
+otline.TextScaled = true
+otline.TextSize = 14.000
+otline.TextWrapped = true
+
+UIAspectRatioConstraint_5.Parent = otline
+
+outtits.Name = "outtits"
+outtits.Parent = chams
+outtits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+outtits.BackgroundTransparency = 1.000
+outtits.Position = UDim2.new(0.172540933, 0, 0.431955904, 0)
+outtits.Size = UDim2.new(0.827459097, 0, 0.178875029, 0)
+outtits.Font = Enum.Font.ArialBold
+outtits.Text = "outlines"
+outtits.TextColor3 = Color3.fromRGB(255, 255, 255)
+outtits.TextSize = 14.000
+outtits.TextWrapped = true
+
+fil.Name = "fil"
+fil.Parent = chams
+fil.BackgroundColor3 = Color3.fromRGB(66, 66, 89)
+fil.BorderColor3 = Color3.fromRGB(0, 0, 0)
+fil.BorderSizePixel = 2
+fil.Position = UDim2.new(0.169769928, 0, 0.609349966, 0)
+fil.Size = UDim2.new(0, 121, 0, 6)
+fil.Font = Enum.Font.ArialBold
+fil.PlaceholderText = "transparency"
+fil.Text = "0.25"
+fil.TextColor3 = Color3.fromRGB(255, 255, 255)
+fil.TextSize = 14.000
+
+tumtum.Name = "tumtum"
+tumtum.Parent = chams
+tumtum.AnchorPoint = Vector2.new(0.5, 0.5)
+tumtum.BackgroundColor3 = Color3.fromRGB(66, 66, 89)
+tumtum.BorderColor3 = Color3.fromRGB(31, 31, 42)
+tumtum.BorderSizePixel = 3
+tumtum.Position = UDim2.new(0.130317554, 0, 0.789424658, 0)
+tumtum.Size = UDim2.new(0.112139829, 0, 0.0715500042, 0)
+tumtum.ZIndex = 3
+tumtum.Font = Enum.Font.ArialBold
+tumtum.Text = ""
+tumtum.TextColor3 = Color3.fromRGB(255, 255, 255)
+tumtum.TextScaled = true
+tumtum.TextSize = 14.000
+tumtum.TextWrapped = true
+
+UIAspectRatioConstraint_6.Parent = tumtum
+
+tume.Name = "tume"
+tume.Parent = chams
+tume.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tume.BackgroundTransparency = 1.000
+tume.Position = UDim2.new(0.172540933, 0, 0.70256412, 0)
+tume.Size = UDim2.new(0.827459097, 0, 0.178875029, 0)
+tume.Font = Enum.Font.ArialBold
+tume.Text = "team-only"
+tume.TextColor3 = Color3.fromRGB(255, 255, 255)
+tume.TextSize = 14.000
+tume.TextWrapped = true
+
+UIListLayout_2.Parent = holder
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+Notif.Name = "Notif"
+Notif.Parent = DrPepperMain
+Notif.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Notif.BackgroundTransparency = 1.000
+Notif.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Notif.Position = UDim2.new(0.794662714, 0, 0.0119658122, 0)
+Notif.Size = UDim2.new(0.200000003, 0, 0.975000024, 0)
+
+UIListLayout_3.Parent = Notif
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.VerticalAlignment = Enum.VerticalAlignment.Bottom
+UIListLayout_3.Padding = UDim.new(0, 20)
+
+Temp.Name = "Temp"
+Temp.Parent = Notif
+Temp.BackgroundColor3 = Color3.fromRGB(39, 39, 53)
+Temp.BorderColor3 = Color3.fromRGB(31, 31, 42)
+Temp.BorderSizePixel = 4
+Temp.Position = UDim2.new(0.000741362572, 0, 0.899145305, 0)
+Temp.Size = UDim2.new(1, 0, 0.075000003, 0)
+Temp.Visible = false
+
+ImageLabel.Parent = Temp
+ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.0352112502, 0, 0.338749945, 0)
+ImageLabel.Rotation = -12.500
+ImageLabel.Size = UDim2.new(0.374595284, 0, 2.36255836, 0)
+ImageLabel.Image = "rbxassetid://135339710"
+
+UIAspectRatioConstraint_7.Parent = ImageLabel
+
+text.Name = "text"
+text.Parent = Temp
+text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text.BackgroundTransparency = 1.000
+text.Position = UDim2.new(0.133432165, 0, 0.309726328, 0)
+text.Size = UDim2.new(0.866835475, 0, 0.825360298, 0)
+text.Font = Enum.Font.ArialBold
+text.Text = "the bluetooth has connected successfully"
+text.TextColor3 = Color3.fromRGB(255, 255, 255)
+text.TextScaled = true
+text.TextSize = 14.000
+text.TextStrokeTransparency = 0.000
+text.TextWrapped = true
+text.TextXAlignment = Enum.TextXAlignment.Left
+text.TextYAlignment = Enum.TextYAlignment.Top
+
+title.Name = "title"
+title.Parent = Temp
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.133432165, 0, -0.16363503, 0)
+title.Size = UDim2.new(0.866999984, 0, 0.449999988, 0)
+title.Font = Enum.Font.ArialBold
+title.Text = "bluetooth device"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextStrokeTransparency = 0.000
+title.TextWrapped = true
+
+ew.Name = "ew"
+ew.Parent = Temp
+ew.AnchorPoint = Vector2.new(0.5, 0.5)
+ew.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ew.BackgroundTransparency = 1.000
+ew.Position = UDim2.new(0.0352112651, 0, -0.736565828, 0)
+ew.Size = UDim2.new(0.100000001, 0, 0.899999976, 0)
+ew.Image = "rbxassetid://242214111"
+ew.ImageColor3 = Color3.fromRGB(111, 69, 20)
+
+UIAspectRatioConstraint_8.Parent = ew
+
+ew_2.Name = "ew"
+ew_2.Parent = Temp
+ew_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ew_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ew_2.BackgroundTransparency = 1.000
+ew_2.Position = UDim2.new(0.120459594, 0, -1.22747099, 0)
+ew_2.Size = UDim2.new(0.100000001, 0, 0.899999976, 0)
+ew_2.Image = "rbxassetid://242214111"
+ew_2.ImageColor3 = Color3.fromRGB(111, 69, 20)
+
+UIAspectRatioConstraint_9.Parent = ew_2
+
+ew_3.Name = "ew"
+ew_3.Parent = Temp
+ew_3.AnchorPoint = Vector2.new(0.5, 0.5)
+ew_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ew_3.BackgroundTransparency = 1.000
+ew_3.Position = UDim2.new(0.00555967726, 0, -1.46123528, 0)
+ew_3.Size = UDim2.new(0.100000001, 0, 0.899999976, 0)
+ew_3.Image = "rbxassetid://242214111"
+ew_3.ImageColor3 = Color3.fromRGB(111, 69, 20)
+
+UIAspectRatioConstraint_10.Parent = ew_3
+
+ew_4.Name = "ew"
+ew_4.Parent = Temp
+ew_4.AnchorPoint = Vector2.new(0.5, 0.5)
+ew_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ew_4.BackgroundTransparency = 1.000
+ew_4.Position = UDim2.new(0.0871015564, 0, -1.92876399, 0)
+ew_4.Size = UDim2.new(0.100000001, 0, 0.899999976, 0)
+ew_4.Image = "rbxassetid://242214111"
+ew_4.ImageColor3 = Color3.fromRGB(111, 69, 20)
+
+UIAspectRatioConstraint_11.Parent = ew_4
+
+-- Scripts:
+
+local function HOMAWL_fake_script() -- LoginScreen.mainthing 
+	local script = Instance.new('LocalScript', LoginScreen)
+
+	--Credits go to whoever made this script.
+	local name = "abc"
+	local code = "def"
+	local opentab = "info"
+	
+	local UIS = game:GetService("UserInputService")
+	function drag (Frame)
+		dragToggle = nil
+		dragSpeed = 0.23
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.125), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	local function sound(id)
+		local sound = Instance.new("Sound")
+		sound.SoundId = "rbxassetid://"..id
+		game.SoundService:PlayLocalSound(sound)
+		game.Debris:AddItem(sound,2) -- eesh
+	end
+	
+	drag(script.Parent)
+	
+	local function notif(msg,title)
+		sound(5940560840)
+		local notifhandler = script.Parent.Parent.Notif
+		local notific = notifhandler.Temp:Clone()
+		notific.Parent = notifhandler
+		notific.Visible = true
+		notific.text.Text = msg
+		notific.title.Text = title
+		delay(2,function()
+			repeat
+				notific.Size-=UDim2.new(0,0,0.0025,0)
+				wait()
+			until notific.Size.Y.Scale < 0
+			game.Debris:AddItem(notific,0)
+		end)
+	end
+	
+	for _, v in pairs(script.Parent.picker:GetChildren()) do
+		if v:IsA("ImageButton") then
+			v.MouseButton1Down:Connect(function()
+				if opentab ~= v.Name then
+					opentab = v.Name
+					for _, v in pairs(script.Parent.tab:GetChildren()) do
+						script.Parent.picker[v.Name].ImageTransparency = 0.4
+						if v:IsA("Frame") then
+							v.Visible = false
+						end
+					end
+					v.ImageTransparency = 0
+					notif("opened "..v.Name.." tab","drpepper")
+					script.Parent.tab[v.Name].Visible = true
+				end
+			end)
+		end
+	end
+	
+end
+coroutine.wrap(HOMAWL_fake_script)()
+local function YEOUFP_fake_script() -- chams.LocalScript 
+	local script = Instance.new('LocalScript', chams)
+
+	local chamon = false
+	local outlineon = false
+	local teamon = false
+	local enablechar = "×"
+	
+	script.Parent.carms.Activated:Connect(function()
+		chamon = not chamon
+		script.Parent.carms.Text = ""
+		if chamon then
+			script.Parent.carms.Text = enablechar
+		end
+	end)
+	
+	script.Parent.otline.Activated:Connect(function()
+		outlineon = not outlineon
+		script.Parent.otline.Text = ""
+		if outlineon then
+			script.Parent.otline.Text = enablechar
+		end
+	end)
+	
+	script.Parent.tumtum.Activated:Connect(function()
+		teamon = not teamon
+		script.Parent.tumtum.Text = ""
+		if teamon then
+			script.Parent.tumtum.Text = enablechar
+		end
+	end)
+	
+	spawn(function()
+		while wait(1.5) do
+			for _, v in pairs(game.Players:GetPlayers()) do
+				if v.Character:FindFirstChildOfClass("Highlight") then
+					v.Character:FindFirstChildOfClass("Highlight"):Destroy()
+				end
+				if chamon then
+					if v.Character and not v.Character:FindFirstChildOfClass("Highlight") then
+						local hlight = Instance.new("Highlight", v.Character); hlight.FillColor = Color3.fromRGB(tonumber(script.Parent.r.Text),tonumber(script.Parent.g.Text),tonumber(script.Parent.b.Text))
+						hlight.OutlineTransparency=1
+						hlight.FillTransparency = tonumber(script.Parent.fil.Text)
+						if not teamon then
+							if v.Team == game.Players.LocalPlayer.Team then
+								hlight:Destroy()
+							end
+						end
+						if outlineon then
+							hlight.OutlineColor = Color3.fromRGB(0,0,0)
+							hlight.OutlineTransparency=0
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(YEOUFP_fake_script)()
