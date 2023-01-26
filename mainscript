@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+--mhm
 
 local DrPepperMain = Instance.new("ScreenGui")
 local LoginScreen = Instance.new("Frame")
@@ -574,7 +571,7 @@ UIAspectRatioConstraint_11.Parent = ew_4
 
 -- Scripts:
 
-local function HOMAWL_fake_script() -- LoginScreen.mainthing 
+local function IXSBW_fake_script() -- LoginScreen.mainthing 
 	local script = Instance.new('LocalScript', LoginScreen)
 
 	--Credits go to whoever made this script.
@@ -664,8 +661,8 @@ local function HOMAWL_fake_script() -- LoginScreen.mainthing
 	end
 	
 end
-coroutine.wrap(HOMAWL_fake_script)()
-local function YEOUFP_fake_script() -- chams.LocalScript 
+coroutine.wrap(IXSBW_fake_script)()
+local function HEFQ_fake_script() -- chams.LocalScript 
 	local script = Instance.new('LocalScript', chams)
 
 	local chamon = false
@@ -700,11 +697,11 @@ local function YEOUFP_fake_script() -- chams.LocalScript
 	spawn(function()
 		while wait(1.5) do
 			for _, v in pairs(game.Players:GetPlayers()) do
-				if v.Character:FindFirstChildOfClass("Highlight") then
-					v.Character:FindFirstChildOfClass("Highlight"):Destroy()
+				if v.Character:FindFirstChildWhichIsA("Highlight") then
+					v.Character:FindFirstChildWhichIsA("Highlight"):Destroy()
 				end
 				if chamon then
-					if v.Character and not v.Character:FindFirstChildOfClass("Highlight") then
+					if v.Character and not v.Character:FindFirstChildWhichIsA("Highlight") then
 						local hlight = Instance.new("Highlight", v.Character); hlight.FillColor = Color3.fromRGB(tonumber(script.Parent.r.Text),tonumber(script.Parent.g.Text),tonumber(script.Parent.b.Text))
 						hlight.OutlineTransparency=1
 						hlight.FillTransparency = tonumber(script.Parent.fil.Text)
@@ -723,4 +720,4 @@ local function YEOUFP_fake_script() -- chams.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YEOUFP_fake_script)()
+coroutine.wrap(HEFQ_fake_script)()
