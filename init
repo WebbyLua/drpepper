@@ -1,0 +1,334 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Login = Instance.new("ScreenGui")
+local LoginScreen = Instance.new("Frame")
+local name = Instance.new("TextBox")
+local code = Instance.new("TextBox")
+local fcname = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local icorn = Instance.new("ImageLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Notif = Instance.new("Frame")
+local UIListLayout = Instance.new("UIListLayout")
+local Temp = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local text = Instance.new("TextLabel")
+local title = Instance.new("TextLabel")
+local ew = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local ew_2 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local ew_3 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local ew_4 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+Login.Name = "Login"
+Login.Parent = game.ServerStorage
+Login.DisplayOrder = 500000000
+Login.ResetOnSpawn = false
+
+LoginScreen.Name = "LoginScreen"
+LoginScreen.Parent = Login
+LoginScreen.BackgroundColor3 = Color3.fromRGB(39, 39, 53)
+LoginScreen.BorderColor3 = Color3.fromRGB(31, 31, 42)
+LoginScreen.BorderSizePixel = 4
+LoginScreen.Position = UDim2.new(0.391401052, 0, 0.223931625, 0)
+LoginScreen.Size = UDim2.new(0.216308385, 0, 0.550000012, 0)
+
+name.Name = "name"
+name.Parent = LoginScreen
+name.AnchorPoint = Vector2.new(0.5, 0.5)
+name.BackgroundColor3 = Color3.fromRGB(49, 49, 66)
+name.BorderColor3 = Color3.fromRGB(31, 31, 42)
+name.BorderSizePixel = 4
+name.Position = UDim2.new(0.5, 0, 0.574048221, 0)
+name.Size = UDim2.new(0.725000024, 0, 0.0599999987, 0)
+name.Font = Enum.Font.ArialBold
+name.PlaceholderText = "Name"
+name.Text = ""
+name.TextColor3 = Color3.fromRGB(255, 255, 255)
+name.TextScaled = true
+name.TextSize = 14.000
+name.TextWrapped = true
+
+code.Name = "code"
+code.Parent = LoginScreen
+code.AnchorPoint = Vector2.new(0.5, 0.5)
+code.BackgroundColor3 = Color3.fromRGB(49, 49, 66)
+code.BorderColor3 = Color3.fromRGB(31, 31, 42)
+code.BorderSizePixel = 4
+code.Position = UDim2.new(0.5, 0, 0.674048185, 0)
+code.Size = UDim2.new(0.725000024, 0, 0.0599999987, 0)
+code.Font = Enum.Font.ArialBold
+code.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+code.PlaceholderText = "Code"
+code.Text = ""
+code.TextColor3 = Color3.fromRGB(255, 255, 255)
+code.TextScaled = true
+code.TextSize = 14.000
+code.TextWrapped = true
+
+fcname.Name = "fcname"
+fcname.Parent = LoginScreen
+fcname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+fcname.BackgroundTransparency = 1.000
+fcname.Size = UDim2.new(1, 0, 0.0782439783, 0)
+fcname.Font = Enum.Font.ArialBold
+fcname.Text = "drpepper"
+fcname.TextColor3 = Color3.fromRGB(255, 255, 255)
+fcname.TextScaled = true
+fcname.TextSize = 14.000
+fcname.TextWrapped = true
+
+TextLabel.Parent = LoginScreen
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.0777000785, 0)
+TextLabel.Size = UDim2.new(1, 0, 0.0533799492, 0)
+TextLabel.Font = Enum.Font.ArialBold
+TextLabel.Text = "login screen"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = LoginScreen
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 0.130536124, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 0.308236212, 0)
+TextLabel_2.Font = Enum.Font.ArialBold
+TextLabel_2.Text = "name=abc, code=def"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextTransparency = 0.950
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextYAlignment = Enum.TextYAlignment.Top
+
+TextButton.Parent = LoginScreen
+TextButton.BackgroundColor3 = Color3.fromRGB(49, 49, 66)
+TextButton.BorderColor3 = Color3.fromRGB(31, 31, 42)
+TextButton.BorderSizePixel = 4
+TextButton.Position = UDim2.new(0.0988826826, 0, 0.817404807, 0)
+TextButton.Size = UDim2.new(0.800000012, 0, 0.075000003, 0)
+TextButton.Font = Enum.Font.ArialBold
+TextButton.Text = "login"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+icorn.Name = "icorn"
+icorn.Parent = LoginScreen
+icorn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+icorn.BackgroundTransparency = 1.000
+icorn.Position = UDim2.new(0.778354287, 0, 0.817404866, 0)
+icorn.Rotation = -15.000
+icorn.Size = UDim2.new(0.270496666, 0, 0.226822123, 0)
+icorn.Image = "rbxassetid://150905416"
+
+UIAspectRatioConstraint.Parent = icorn
+
+Notif.Name = "Notif"
+Notif.Parent = Login
+Notif.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Notif.BackgroundTransparency = 1.000
+Notif.Position = UDim2.new(0.794662714, 0, 0.0119658122, 0)
+Notif.Size = UDim2.new(0.200000003, 0, 0.975000024, 0)
+
+UIListLayout.Parent = Notif
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
+UIListLayout.Padding = UDim.new(0, 20)
+
+Temp.Name = "Temp"
+Temp.Parent = Notif
+Temp.BackgroundColor3 = Color3.fromRGB(39, 39, 53)
+Temp.BorderColor3 = Color3.fromRGB(31, 31, 42)
+Temp.BorderSizePixel = 4
+Temp.Position = UDim2.new(0.000741362572, 0, 0.899145305, 0)
+Temp.Size = UDim2.new(1, 0, 0.075000003, 0)
+Temp.Visible = false
+
+ImageLabel.Parent = Temp
+ImageLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.0352112502, 0, 0.338749945, 0)
+ImageLabel.Rotation = -12.500
+ImageLabel.Size = UDim2.new(0.374595284, 0, 2.36255836, 0)
+ImageLabel.Image = "rbxassetid://135339710"
+
+UIAspectRatioConstraint_2.Parent = ImageLabel
+
+text.Name = "text"
+text.Parent = Temp
+text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+text.BackgroundTransparency = 1.000
+text.Position = UDim2.new(0.133432165, 0, 0.309726328, 0)
+text.Size = UDim2.new(0.866835475, 0, 0.825360298, 0)
+text.Font = Enum.Font.ArialBold
+text.Text = "the bluetooth has connected successfully"
+text.TextColor3 = Color3.fromRGB(255, 255, 255)
+text.TextScaled = true
+text.TextSize = 14.000
+text.TextStrokeTransparency = 0.000
+text.TextWrapped = true
+text.TextXAlignment = Enum.TextXAlignment.Left
+text.TextYAlignment = Enum.TextYAlignment.Top
+
+title.Name = "title"
+title.Parent = Temp
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.133432165, 0, -0.16363503, 0)
+title.Size = UDim2.new(0.866999984, 0, 0.449999988, 0)
+title.Font = Enum.Font.ArialBold
+title.Text = "bluetooth device"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextStrokeTransparency = 0.000
+title.TextWrapped = true
+
+ew.Name = "ew"
+ew.Parent = Temp
+ew.AnchorPoint = Vector2.new(0.5, 0.5)
+ew.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ew.BackgroundTransparency = 1.000
+ew.Position = UDim2.new(0.0352112651, 0, -0.736565828, 0)
+ew.Size = UDim2.new(0.100000001, 0, 0.899999976, 0)
+ew.Image = "rbxassetid://242214111"
+ew.ImageColor3 = Color3.fromRGB(111, 69, 20)
+
+UIAspectRatioConstraint_3.Parent = ew
+
+ew_2.Name = "ew"
+ew_2.Parent = Temp
+ew_2.AnchorPoint = Vector2.new(0.5, 0.5)
+ew_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ew_2.BackgroundTransparency = 1.000
+ew_2.Position = UDim2.new(0.120459594, 0, -1.22747099, 0)
+ew_2.Size = UDim2.new(0.100000001, 0, 0.899999976, 0)
+ew_2.Image = "rbxassetid://242214111"
+ew_2.ImageColor3 = Color3.fromRGB(111, 69, 20)
+
+UIAspectRatioConstraint_4.Parent = ew_2
+
+ew_3.Name = "ew"
+ew_3.Parent = Temp
+ew_3.AnchorPoint = Vector2.new(0.5, 0.5)
+ew_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ew_3.BackgroundTransparency = 1.000
+ew_3.Position = UDim2.new(0.00555967726, 0, -1.46123528, 0)
+ew_3.Size = UDim2.new(0.100000001, 0, 0.899999976, 0)
+ew_3.Image = "rbxassetid://242214111"
+ew_3.ImageColor3 = Color3.fromRGB(111, 69, 20)
+
+UIAspectRatioConstraint_5.Parent = ew_3
+
+ew_4.Name = "ew"
+ew_4.Parent = Temp
+ew_4.AnchorPoint = Vector2.new(0.5, 0.5)
+ew_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ew_4.BackgroundTransparency = 1.000
+ew_4.Position = UDim2.new(0.0871015564, 0, -1.92876399, 0)
+ew_4.Size = UDim2.new(0.100000001, 0, 0.899999976, 0)
+ew_4.Image = "rbxassetid://242214111"
+ew_4.ImageColor3 = Color3.fromRGB(111, 69, 20)
+
+UIAspectRatioConstraint_6.Parent = ew_4
+
+-- Scripts:
+
+local function RVBGDB_fake_script() -- LoginScreen.loginMain 
+	local script = Instance.new('LocalScript', LoginScreen)
+
+	--Credits go to whoever made this script.
+	local name = "abc"
+	local code = "def"
+	
+	local UIS = game:GetService("UserInputService")
+	function drag (Frame)
+		dragToggle = nil
+		dragSpeed = 0.23
+		dragInput = nil
+		dragStart = nil
+		dragPos = nil
+		function updateInput(input)
+			Delta = input.Position - dragStart
+			Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.125), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
+				dragToggle = true
+				dragStart = input.Position
+				startPos = Frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if input == dragInput and dragToggle then
+				updateInput(input)
+			end
+		end)
+	end
+	
+	local function sound(id)
+		local sound = Instance.new("Sound")
+		sound.SoundId = "rbxassetid://"..id
+		game.SoundService:PlayLocalSound(sound)
+		game.Debris:AddItem(sound,2) -- eesh
+	end
+	
+	drag(script.Parent)
+	
+	local function notif(msg,title)
+		sound(6315580910)
+		local notifhandler = script.Parent.Parent.Notif
+		local notific = notifhandler.Temp:Clone()
+		notific.Parent = notifhandler
+		notific.Visible = true
+		notific.text.Text = msg
+		notific.title.Text = title
+		delay(2,function()
+			repeat
+				notific.Size-=UDim2.new(0,0,0.0025,0)
+				wait()
+			until notific.Size.Y.Scale < 0
+			game.Debris:AddItem(notific,0)
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/WebbyLua/drpepper/main/mainscript"))()
+		end)
+		script.Parent.Visible = false
+	end
+	
+	script.Parent.TextButton.MouseButton1Down:Connect(function()
+		if script.Parent.name.Text == name then
+			if script.Parent.code.Text == code then
+				notif("login successful, launching now","correct credentials")
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(RVBGDB_fake_script)()
