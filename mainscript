@@ -1,4 +1,7 @@
---mhm
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
 
 local DrPepperMain = Instance.new("ScreenGui")
 local LoginScreen = Instance.new("Frame")
@@ -25,40 +28,52 @@ local TextLabel_2 = Instance.new("TextLabel")
 local t_2 = Instance.new("TextLabel")
 local visual_2 = Instance.new("Frame")
 local info2_3 = Instance.new("Frame")
-local info3_3 = Instance.new("Frame")
-local info1_3 = Instance.new("Frame")
+local UIListLayout_2 = Instance.new("UIListLayout")
 local TextLabel_3 = Instance.new("TextLabel")
+local glumvz = Instance.new("Frame")
+local glorvs = Instance.new("TextButton")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local gluvs = Instance.new("TextLabel")
+local glumvz_2 = Instance.new("Frame")
+local glorvs_2 = Instance.new("TextButton")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local gluvs_2 = Instance.new("TextLabel")
+local info3_3 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIListLayout_3 = Instance.new("UIListLayout")
+local info1_3 = Instance.new("Frame")
+local TextLabel_5 = Instance.new("TextLabel")
 local holder = Instance.new("Frame")
 local chams = Instance.new("Frame")
 local carms = Instance.new("TextButton")
-local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
 local camamas = Instance.new("TextLabel")
 local r = Instance.new("TextBox")
 local g = Instance.new("TextBox")
 local b = Instance.new("TextBox")
 local otline = Instance.new("TextButton")
-local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
 local outtits = Instance.new("TextLabel")
 local fil = Instance.new("TextBox")
 local tumtum = Instance.new("TextButton")
-local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
 local tume = Instance.new("TextLabel")
-local UIListLayout_2 = Instance.new("UIListLayout")
 local Notif = Instance.new("Frame")
-local UIListLayout_3 = Instance.new("UIListLayout")
+local UIListLayout_4 = Instance.new("UIListLayout")
 local Temp = Instance.new("Frame")
 local ImageLabel = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
 local text = Instance.new("TextLabel")
 local title = Instance.new("TextLabel")
 local ew = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
-local ew_2 = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
-local ew_3 = Instance.new("ImageLabel")
 local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
-local ew_4 = Instance.new("ImageLabel")
+local ew_2 = Instance.new("ImageLabel")
 local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+local ew_3 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
+local ew_4 = Instance.new("ImageLabel")
+local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
 
 --Properties:
 
@@ -269,6 +284,92 @@ info2_3.BorderSizePixel = 4
 info2_3.Position = UDim2.new(0.740507066, 0, 0.223516151, 0)
 info2_3.Size = UDim2.new(0.481388688, 0, 0.39703235, 0)
 
+UIListLayout_2.Parent = info2_3
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+TextLabel_3.Parent = info2_3
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Size = UDim2.new(1, 0, 0.117787912, 0)
+TextLabel_3.Font = Enum.Font.ArialBold
+TextLabel_3.Text = "arms"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+glumvz.Name = "glumvz"
+glumvz.Parent = info2_3
+glumvz.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+glumvz.BackgroundTransparency = 1.000
+glumvz.Size = UDim2.new(1.00000012, 0, 0.158955514, 0)
+
+glorvs.Name = "glorvs"
+glorvs.Parent = glumvz
+glorvs.AnchorPoint = Vector2.new(0.5, 0.5)
+glorvs.BackgroundColor3 = Color3.fromRGB(66, 66, 89)
+glorvs.BorderColor3 = Color3.fromRGB(31, 31, 42)
+glorvs.BorderSizePixel = 3
+glorvs.Position = UDim2.new(0.130317554, 0, 0.324955642, 0)
+glorvs.Size = UDim2.new(0.349999994, 0, 0.349999994, 0)
+glorvs.ZIndex = 3
+glorvs.Font = Enum.Font.ArialBold
+glorvs.Text = ""
+glorvs.TextColor3 = Color3.fromRGB(255, 255, 255)
+glorvs.TextScaled = true
+glorvs.TextSize = 14.000
+glorvs.TextWrapped = true
+
+UIAspectRatioConstraint_4.Parent = glorvs
+
+gluvs.Name = "gluvs"
+gluvs.Parent = glumvz
+gluvs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gluvs.BackgroundTransparency = 1.000
+gluvs.Position = UDim2.new(0.172540933, 0, 0.23809509, 0)
+gluvs.Size = UDim2.new(0.827459097, 0, 0.178875029, 0)
+gluvs.Font = Enum.Font.ArialBold
+gluvs.Text = "remove gloves"
+gluvs.TextColor3 = Color3.fromRGB(255, 255, 255)
+gluvs.TextSize = 14.000
+gluvs.TextWrapped = true
+
+glumvz_2.Name = "glumvz"
+glumvz_2.Parent = info2_3
+glumvz_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+glumvz_2.BackgroundTransparency = 1.000
+glumvz_2.Size = UDim2.new(1.00000012, 0, 0.158955514, 0)
+
+glorvs_2.Name = "glorvs"
+glorvs_2.Parent = glumvz_2
+glorvs_2.AnchorPoint = Vector2.new(0.5, 0.5)
+glorvs_2.BackgroundColor3 = Color3.fromRGB(66, 66, 89)
+glorvs_2.BorderColor3 = Color3.fromRGB(31, 31, 42)
+glorvs_2.BorderSizePixel = 3
+glorvs_2.Position = UDim2.new(0.130317554, 0, 0.563050747, 0)
+glorvs_2.Size = UDim2.new(0.349999994, 0, 0.349999994, 0)
+glorvs_2.ZIndex = 3
+glorvs_2.Font = Enum.Font.ArialBold
+glorvs_2.Text = ""
+glorvs_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+glorvs_2.TextScaled = true
+glorvs_2.TextSize = 14.000
+glorvs_2.TextWrapped = true
+
+UIAspectRatioConstraint_5.Parent = glorvs_2
+
+gluvs_2.Name = "gluvs"
+gluvs_2.Parent = glumvz_2
+gluvs_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gluvs_2.BackgroundTransparency = 1.000
+gluvs_2.Position = UDim2.new(0.172540933, 0, 0.47619018, 0)
+gluvs_2.Size = UDim2.new(0.827459097, 0, 0.178875029, 0)
+gluvs_2.Font = Enum.Font.ArialBold
+gluvs_2.Text = "remove sleeves"
+gluvs_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+gluvs_2.TextSize = 14.000
+gluvs_2.TextWrapped = true
+
 info3_3.Name = "info3"
 info3_3.Parent = visual_2
 info3_3.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -277,6 +378,29 @@ info3_3.BorderColor3 = Color3.fromRGB(31, 31, 42)
 info3_3.BorderSizePixel = 4
 info3_3.Position = UDim2.new(0.740507066, 0, 0.719383895, 0)
 info3_3.Size = UDim2.new(0.481388688, 0, 0.511232197, 0)
+
+TextLabel_4.Parent = info3_3
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Size = UDim2.new(1, 0, 0.0705417246, 0)
+TextLabel_4.Font = Enum.Font.ArialBold
+TextLabel_4.Text = "custom models"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+ScrollingFrame.Parent = info3_3
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.0705415457, 0)
+ScrollingFrame.Size = UDim2.new(1, 0, 1, 0)
+
+UIListLayout_3.Parent = ScrollingFrame
+UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_3.Padding = UDim.new(0, 5)
 
 info1_3.Name = "info1"
 info1_3.Parent = visual_2
@@ -287,16 +411,16 @@ info1_3.BorderSizePixel = 4
 info1_3.Position = UDim2.new(0.255875826, 0, 0.5, 0)
 info1_3.Size = UDim2.new(0.413294882, 0, 0.949999988, 0)
 
-TextLabel_3.Parent = info1_3
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.Size = UDim2.new(1, 0, 0.0492269322, 0)
-TextLabel_3.Font = Enum.Font.ArialBold
-TextLabel_3.Text = "esp & chams"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
+TextLabel_5.Parent = info1_3
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Size = UDim2.new(1, 0, 0.0492269322, 0)
+TextLabel_5.Font = Enum.Font.ArialBold
+TextLabel_5.Text = "esp & chams"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
 
 holder.Name = "holder"
 holder.Parent = info1_3
@@ -327,7 +451,7 @@ carms.TextScaled = true
 carms.TextSize = 14.000
 carms.TextWrapped = true
 
-UIAspectRatioConstraint_4.Parent = carms
+UIAspectRatioConstraint_6.Parent = carms
 
 camamas.Name = "camamas"
 camamas.Parent = chams
@@ -346,7 +470,7 @@ r.Parent = chams
 r.BackgroundColor3 = Color3.fromRGB(66, 66, 89)
 r.BorderColor3 = Color3.fromRGB(125, 0, 0)
 r.BorderSizePixel = 2
-r.Position = UDim2.new(0.169769928, 0, 0.176709145, 0)
+r.Position = UDim2.new(0.133994922, 0, 0.176709145, 0)
 r.Size = UDim2.new(0, 121, 0, 6)
 r.Font = Enum.Font.ArialBold
 r.PlaceholderText = "red"
@@ -359,7 +483,7 @@ g.Parent = chams
 g.BackgroundColor3 = Color3.fromRGB(66, 66, 89)
 g.BorderColor3 = Color3.fromRGB(0, 125, 0)
 g.BorderSizePixel = 2
-g.Position = UDim2.new(0.169769928, 0, 0.266889691, 0)
+g.Position = UDim2.new(0.133994922, 0, 0.266889691, 0)
 g.Size = UDim2.new(0, 121, 0, 6)
 g.Font = Enum.Font.ArialBold
 g.PlaceholderText = "green"
@@ -374,11 +498,11 @@ b.Parent = chams
 b.BackgroundColor3 = Color3.fromRGB(66, 66, 89)
 b.BorderColor3 = Color3.fromRGB(0, 0, 125)
 b.BorderSizePixel = 2
-b.Position = UDim2.new(0.169769928, 0, 0.355244339, 0)
+b.Position = UDim2.new(0.133994922, 0, 0.355244339, 0)
 b.Size = UDim2.new(0, 121, 0, 6)
 b.Font = Enum.Font.ArialBold
 b.PlaceholderText = "blue"
-b.Text = "255"
+b.Text = "125"
 b.TextColor3 = Color3.fromRGB(255, 255, 255)
 b.TextSize = 14.000
 
@@ -398,7 +522,7 @@ otline.TextScaled = true
 otline.TextSize = 14.000
 otline.TextWrapped = true
 
-UIAspectRatioConstraint_5.Parent = otline
+UIAspectRatioConstraint_7.Parent = otline
 
 outtits.Name = "outtits"
 outtits.Parent = chams
@@ -417,7 +541,7 @@ fil.Parent = chams
 fil.BackgroundColor3 = Color3.fromRGB(66, 66, 89)
 fil.BorderColor3 = Color3.fromRGB(0, 0, 0)
 fil.BorderSizePixel = 2
-fil.Position = UDim2.new(0.169769928, 0, 0.609349966, 0)
+fil.Position = UDim2.new(0.133994922, 0, 0.609349966, 0)
 fil.Size = UDim2.new(0, 121, 0, 6)
 fil.Font = Enum.Font.ArialBold
 fil.PlaceholderText = "transparency"
@@ -441,7 +565,7 @@ tumtum.TextScaled = true
 tumtum.TextSize = 14.000
 tumtum.TextWrapped = true
 
-UIAspectRatioConstraint_6.Parent = tumtum
+UIAspectRatioConstraint_8.Parent = tumtum
 
 tume.Name = "tume"
 tume.Parent = chams
@@ -450,13 +574,10 @@ tume.BackgroundTransparency = 1.000
 tume.Position = UDim2.new(0.172540933, 0, 0.70256412, 0)
 tume.Size = UDim2.new(0.827459097, 0, 0.178875029, 0)
 tume.Font = Enum.Font.ArialBold
-tume.Text = "team-only"
+tume.Text = "team"
 tume.TextColor3 = Color3.fromRGB(255, 255, 255)
 tume.TextSize = 14.000
 tume.TextWrapped = true
-
-UIListLayout_2.Parent = holder
-UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 
 Notif.Name = "Notif"
 Notif.Parent = DrPepperMain
@@ -466,10 +587,10 @@ Notif.BorderColor3 = Color3.fromRGB(27, 42, 53)
 Notif.Position = UDim2.new(0.794662714, 0, 0.0119658122, 0)
 Notif.Size = UDim2.new(0.200000003, 0, 0.975000024, 0)
 
-UIListLayout_3.Parent = Notif
-UIListLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
-UIListLayout_3.VerticalAlignment = Enum.VerticalAlignment.Bottom
-UIListLayout_3.Padding = UDim.new(0, 20)
+UIListLayout_4.Parent = Notif
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_4.VerticalAlignment = Enum.VerticalAlignment.Bottom
+UIListLayout_4.Padding = UDim.new(0, 20)
 
 Temp.Name = "Temp"
 Temp.Parent = Notif
@@ -489,7 +610,7 @@ ImageLabel.Rotation = -12.500
 ImageLabel.Size = UDim2.new(0.374595284, 0, 2.36255836, 0)
 ImageLabel.Image = "rbxassetid://135339710"
 
-UIAspectRatioConstraint_7.Parent = ImageLabel
+UIAspectRatioConstraint_9.Parent = ImageLabel
 
 text.Name = "text"
 text.Parent = Temp
@@ -531,7 +652,7 @@ ew.Size = UDim2.new(0.100000001, 0, 0.899999976, 0)
 ew.Image = "rbxassetid://242214111"
 ew.ImageColor3 = Color3.fromRGB(111, 69, 20)
 
-UIAspectRatioConstraint_8.Parent = ew
+UIAspectRatioConstraint_10.Parent = ew
 
 ew_2.Name = "ew"
 ew_2.Parent = Temp
@@ -543,7 +664,7 @@ ew_2.Size = UDim2.new(0.100000001, 0, 0.899999976, 0)
 ew_2.Image = "rbxassetid://242214111"
 ew_2.ImageColor3 = Color3.fromRGB(111, 69, 20)
 
-UIAspectRatioConstraint_9.Parent = ew_2
+UIAspectRatioConstraint_11.Parent = ew_2
 
 ew_3.Name = "ew"
 ew_3.Parent = Temp
@@ -555,7 +676,7 @@ ew_3.Size = UDim2.new(0.100000001, 0, 0.899999976, 0)
 ew_3.Image = "rbxassetid://242214111"
 ew_3.ImageColor3 = Color3.fromRGB(111, 69, 20)
 
-UIAspectRatioConstraint_10.Parent = ew_3
+UIAspectRatioConstraint_12.Parent = ew_3
 
 ew_4.Name = "ew"
 ew_4.Parent = Temp
@@ -567,11 +688,11 @@ ew_4.Size = UDim2.new(0.100000001, 0, 0.899999976, 0)
 ew_4.Image = "rbxassetid://242214111"
 ew_4.ImageColor3 = Color3.fromRGB(111, 69, 20)
 
-UIAspectRatioConstraint_11.Parent = ew_4
+UIAspectRatioConstraint_13.Parent = ew_4
 
 -- Scripts:
 
-local function IXSBW_fake_script() -- LoginScreen.mainthing 
+local function NYUZLN_fake_script() -- LoginScreen.mainthing 
 	local script = Instance.new('LocalScript', LoginScreen)
 
 	--Credits go to whoever made this script.
@@ -661,8 +782,62 @@ local function IXSBW_fake_script() -- LoginScreen.mainthing
 	end
 	
 end
-coroutine.wrap(IXSBW_fake_script)()
-local function HEFQ_fake_script() -- chams.LocalScript 
+coroutine.wrap(NYUZLN_fake_script)()
+local function OWJMK_fake_script() -- glumvz.LocalScript 
+	local script = Instance.new('LocalScript', glumvz)
+
+	local glumz = false
+	local enablechar = "×"
+	
+	script.Parent.glorvs.Activated:Connect(function()
+		glumz = not glumz
+		script.Parent.glumz.Text = ""
+		if glumz then
+			script.Parent.glumz.Text = enablechar
+		end
+	end)
+	
+	workspace.CurrentCamera.ChildAdded:Connect(function(instance)
+		if instance.Name == "Arms" then
+			if glumz then
+				for _, v in pairs(instance:GetDescendants()) do
+					if string.find(v.Name,"Glove") then
+						v.Transparency = 1
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(OWJMK_fake_script)()
+local function QLZRJEI_fake_script() -- glumvz_2.LocalScript 
+	local script = Instance.new('LocalScript', glumvz_2)
+
+	local glumz = false
+	local enablechar = "×"
+	
+	script.Parent.glorvs.Activated:Connect(function()
+		glumz = not glumz
+		script.Parent.glumz.Text = ""
+		if glumz then
+			script.Parent.glumz.Text = enablechar
+		end
+	end)
+	
+	workspace.CurrentCamera.ChildAdded:Connect(function(instance)
+		if instance.Name == "Arms" then
+			if glumz then
+				for _, v in pairs(instance:GetDescendants()) do
+					if string.find(v.Name,"Sleeve") then
+						v.Transparency = 1
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(QLZRJEI_fake_script)()
+local function UNKQFTL_fake_script() -- chams.LocalScript 
 	local script = Instance.new('LocalScript', chams)
 
 	local chamon = false
@@ -697,9 +872,6 @@ local function HEFQ_fake_script() -- chams.LocalScript
 	spawn(function()
 		while wait(1.5) do
 			for _, v in pairs(game.Players:GetPlayers()) do
-				if v.Character:FindFirstChildWhichIsA("Highlight") then
-					v.Character:FindFirstChildWhichIsA("Highlight"):Destroy()
-				end
 				if chamon then
 					if v.Character and not v.Character:FindFirstChildWhichIsA("Highlight") then
 						local hlight = Instance.new("Highlight", v.Character); hlight.FillColor = Color3.fromRGB(tonumber(script.Parent.r.Text),tonumber(script.Parent.g.Text),tonumber(script.Parent.b.Text))
@@ -720,4 +892,4 @@ local function HEFQ_fake_script() -- chams.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HEFQ_fake_script)()
+coroutine.wrap(UNKQFTL_fake_script)()
