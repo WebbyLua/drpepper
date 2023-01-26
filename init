@@ -32,7 +32,7 @@ local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
 --Properties:
 
 Login.Name = "Login"
-Login.Parent = game.ServerStorage
+Login.Parent = game.Players.LocalPlayer.PlayerGui
 Login.DisplayOrder = 500000000
 Login.ResetOnSpawn = false
 
